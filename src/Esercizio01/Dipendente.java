@@ -9,11 +9,7 @@ public class Dipendente {
 	private Livello livello;
 	private Dipartimento dipartimento;
 
-//	Definire due costruttori: 
-//		- uno che accetti solo la matricola e Dipartimento ed imposti i seguenti valori
-//			- stipendio = stipendioBase
-//			- importoOrarioStraordinario = 30
-//			- Livello = OPERAIO
+
 	public Dipendente(String _matricola, Dipartimento _dipartimento) {
 		this.matricola = _matricola;
 		this.dipartimento = _dipartimento;
@@ -22,7 +18,7 @@ public class Dipendente {
 		this.livello = Livello.OPERAIO;
 	}
 
-//	- Uno che accetti tutti i parametri
+
 	public Dipendente(String _matricola, Dipartimento _dipartimento, double _stipendio,
 			double _importoOrarioStraordinario,
 			Livello _livello) {
@@ -33,8 +29,7 @@ public class Dipendente {
 		this.livello = _livello;
 	}
 
-//	Definire i seguenti metodi
-//	- stampaDatiDipendente - Stampa i dati del dipendente
+
 	public void stampaDatiDipendente() {
 		System.out.printf(
 				"Matricola: %s\nDipartimento: %s\nStipendio: %.2f\nImporto Orario Straordinario: %.2f\nLivello: %s\n\n\n",
@@ -65,10 +60,6 @@ public class Dipendente {
 		}
 		return this.livello;
 	}
-//	Definire i seguenti metodi statici:
-//		- calcolaPaga - accetta un'istanza di dipendente e ne ritorna lo stipendio mensile
-//		- calcolaPaga - accetta un'istanza di dipendente ed un parametro intero con le ore 
-//	di straordinario e ritorna lo stipendio mensile comprensivo di straordinario
 
 	public static double calcolaPaga(Dipendente dipendente) {
 		return dipendente.stipendio;
