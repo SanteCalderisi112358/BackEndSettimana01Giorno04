@@ -3,11 +3,11 @@ package Esercizio01;
 
 public class Dipendente {
 	private static double stipendioBase = 1000;
-	private String matricola;
-	private double stipendio;
-	private double importoOrarioStraordinario;
-	private Livello livello;
-	private Dipartimento dipartimento;
+	private static String matricola;
+	private static double stipendio;
+	private static double importoOrarioStraordinario;
+	private static Livello livello;
+	private static Dipartimento dipartimento;
 
 
 	public Dipendente(String _matricola, Dipartimento _dipartimento) {
@@ -78,8 +78,10 @@ public class Dipendente {
 		return this.stipendio;
 	}
 
-	public void getImportoOraStraordinario() {
-		System.out.println("Importo Ora Straordinario: " + this.importoOrarioStraordinario);
+	public double getImportoOraStraordinario() {
+		// System.out.println("Importo Ora Straordinario: " +
+		// this.importoOrarioStraordinario);
+		return this.importoOrarioStraordinario;
 	}
 
 	public void getLivello() {

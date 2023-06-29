@@ -19,6 +19,7 @@ public class Esercizio01 {
 		lavoratore1.setImportoOrarioStraordinario(35.00);
 		lavoratore1.getImportoOraStraordinario();
 		lavoratore5.promuovi();
+		lavoratore5.stampaDatiDipendente();
 	}
 
 }
