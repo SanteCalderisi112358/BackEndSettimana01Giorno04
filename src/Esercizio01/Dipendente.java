@@ -82,8 +82,9 @@ public class Dipendente {
 		System.out.println("Matricola: " + this.matricola);
 	}
 
-	public void getStipendio() {
-		System.out.println("Stipendio: " + this.stipendio);
+	public double getStipendio() {
+//		System.out.println("Stipendio: " + this.stipendio);
+		return this.stipendio;
 	}
 
 	public void getImportoOraStraordinario() {
